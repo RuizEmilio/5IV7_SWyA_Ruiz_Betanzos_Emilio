@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DES</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src = 'script.js'></script>
+  <link rel="stylesheet" media="all" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CIFRADO DES</h1>
+    <h3>RUIZ BETANZOS EMILIO || 5IV7</h3>
+  </header>
+  <br>
+  <div id = 'contenedorPrincipal'>
+      <div id = 'contenedorCifrar'>
+          <h2>INTRODUCE PARA CIFRAR</h2>
+          <input type = 'file' id = 'fileCifrar' onchange = 'return ValidarCifrar()'>
+          <br>
+          <input class = 'accion' type = 'button' value = 'CIFRAR' onclick = 'Cifrar()'>
+          <br>
+          <div class = 'salida' id = 'lectorArchivoCifrar'>
+              <label>EL MENSAJE ENCRIPTADO ES EL SIGUIENTE :</label>
+              <br>
+          </div>
+      </div>
+      <div id = 'contenedorClave'>
+          <label>CLAVE : <input type = 'text' id = 'clave' maxlength = '8'></label>
+      </div>
+      <div id = 'contenedorDecifrar'>
+          <h2>INTRODUCE PARA DECIFRAR</h2>
+          <input type = 'file' id = 'fileDecifrar' onchange = 'return ValidarDecifrar()'>
+          <br>
+          <input class = 'accion' type = 'button' value = 'DECIFRAR' onclick = 'Decifrar()'>
+          <br>
+          <div class = 'salida' id = 'lectorArchivoDecifrar'>
+              <label>EL MENSAJE DECENCRIPTADO ES EL SIGUIENTE :</label>
+              <br>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
